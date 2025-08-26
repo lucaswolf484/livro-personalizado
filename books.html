@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Livros infantis personalizados que transformam seu filho no herói da própria história.">
+    <meta name="keywords" content="livros infantis, personalizados, presentes, histórias, crianças">
+    <title>Livros Infantis Personalizados</title>
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="books.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Livros<span>Infantis</span></h1>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link active">Início</a></li>
+                        <li><a href="#livros" class="nav-link">Livros</a></li>
+                        <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+                        <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                        <li><a href="#suporte" class="nav-link">Suporte</a></li>
+                        <li><a href="#entrar" class="nav-link">Entrar/Cadastrar</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-icons">
+                    <div class="language-switch">
+                        <button>PT</button>/<button>EN</button>
+                    </div>
+                    <button class="btn-create">Criar meu livro</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Transforme seu filho no herói da própria história!</h2>
+                <p class="hero-subtitle">Livros personalizados com nome, aparência e características da criança. Uma lembrança única e emocionante.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Começar agora</button>
+                </div>
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop" alt="Livro Personalizado" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section id="personalizacao" class="filters">
+        <div class="container">
+            <h2>Personalize seu livro</h2>
+            <div class="filter-options">
+                <label for="genero">Gênero:</label>
+                <select id="genero">
+                    <option value="menino">Menino</option>
+                    <option value="menina">Menina</option>
+                </select>
+                <label for="faixa-etaria">Faixa etária:</label>
+                <select id="faixa-etaria">
+                    <option value="0-2">0–2</option>
+                    <option value="2-4">2–4</option>
+                    <option value="4-6">4–6</option>
+                    <option value="6-8">6–8</option>
+                    <option value="8+">8+</option>
+                </select>
+                <button class="btn-filter">Buscar Livros</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Catalog Section -->
+    <section id="livros" class="books-catalog">
+        <div class="container">
+            <h2 class="section-title">Livros Disponíveis</h2>
+            <div class="books-grid">
+                <!-- Book Card 1 -->
+                <div class="book-card">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=300&fit=crop" alt="Aventura na Floresta">
+                    <h3>Aventura na Floresta</h3>
+                    <p>Faixa etária: 4–6</p>
+                    <p>Uma emocionante jornada pela floresta encantada!</p>
+                    <p class="price">R$ 49,90 <span class="promo-price">R$ 39,90</span></p>
+                    <button class="btn-personalize">Personalizar este livro</button>
+                </div>
+                <!-- Book Card 2 -->
+                <div class="book-card">
+                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=300&h=300&fit=crop" alt="O Pequeno Astronauta">
+                    <h3>O Pequeno Astronauta</h3>
+                    <p>Faixa etária: 6–8</p>
+                    <p>Uma viagem incrível pelo sistema solar!</p>
+                    <p class="price">R$ 59,90 <span class="promo-price">R$ 49,90</span></p>
+                    <button class="btn-personalize">Personalizar este livro</button>
+                </div>
+                <!-- Book Card 3 -->
+                <div class="book-card">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=300&h=300&fit=crop" alt="A Princesa Corajosa">
+                    <h3>A Princesa Corajosa</h3>
+                    <p>Faixa etária: 2–4</p>
+                    <p>Uma princesa destemida em busca de aventuras!</p>
+                    <p class="price">R$ 44,90 <span class="promo-price">R$ 34,90</span></p>
+                    <button class="btn-personalize">Personalizar este livro</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Sections -->
+    <section class="highlight-sections">
+        <div class="container">
+            <h2 class="section-title">Destaques</h2>
+            <div class="highlight-grid">
+                <div class="highlight-category">
+                    <h3>Mais vendidos</h3>
+                    <div class="highlight-books">
+                        <!-- Best selling books -->
+                        <div class="highlight-book">
+                            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=200&h=200&fit=crop" alt="Mais Vendido">
+                            <p>Aventura na Floresta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-category">
+                    <h3>Aprendizado e Educação</h3>
+                    <div class="highlight-books">
+                        <!-- Educational books -->
+                        <div class="highlight-book">
+                            <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=200&h=200&fit=crop" alt="Educativo">
+                            <p>ABC Mágico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-category">
+                    <h3>Aventuras Mágicas</h3>
+                    <div class="highlight-books">
+                        <!-- Adventure books -->
+                        <div class="highlight-book">
+                            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=200&h=200&fit=crop" alt="Aventura">
+                            <p>Reino Encantado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personalization Demo -->
+    <section class="personalization-demo">
+        <div class="container">
+            <h2 class="section-title">Personalização Completa</h2>
+            <p class="demo-text">Cada detalhe é pensado para que seu filho se veja como o protagonista!</p>
+            <div class="personalization-features">
+                <div class="feature">
+                    <i class="fas fa-signature"></i>
+                    <h4>Nome da Criança</h4>
+                    <p>Personalize com o nome do seu pequeno herói</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-user"></i>
+                    <h4>Aparência</h4>
+                    <p>Escolha cabelo, cor de pele e roupa</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <h4>Mensagem Especial</h4>
+                    <p>Dedicação personalizada para emocionar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore by Age -->
+    <section class="explore-age">
+        <div class="container">
+            <h2 class="section-title">Explore por Idade</h2>
+            <div class="age-blocks">
+                <div class="age-block" style="background-color: #FFD700;">
+                    <h3>0–2 anos</h3>
+                    <p>Livros sensoriais</p>
+                </div>
+                <div class="age-block" style="background-color: #4CAF50;">
+                    <h3>2–4 anos</h3>
+                    <p>Primeiras histórias</p>
+                </div>
+                <div class="age-block" style="background-color: #FF6B6B;">
+                    <h3>4–6 anos</h3>
+                    <p>Aventuras mágicas</p>
+                </div>
+                <div class="age-block" style="background-color: #667eea;">
+                    <h3>6–8 anos</h3>
+                    <p>Descobertas incríveis</p>
+                </div>
+                <div class="age-block" style="background-color: #764ba2;">
+                    <h3>8+ anos</h3>
+                    <p>Mundos fantásticos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que os pais dizem</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop" alt="Ana">
+                    <p>"Minha filha chorou de emoção ao se ver no livro!"</p>
+                    <span class="testimonial-author">- Ana, SP</span>
+                </div>
+                <div class="testimonial">
+                    <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db1604?w=100&h=100&fit=crop" alt="Carlos">
+                    <p>"Presente perfeito! Meu filho não para de ler."</p>
+                    <span class="testimonial-author">- Carlos, RJ</span>
+                </div>
+                <div class="testimonial">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop" alt="Maria">
+                    <p>"Qualidade impressionante e entrega rápida."</p>
+                    <span class="testimonial-author">- Maria, MG</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>Quanto tempo demora o envio?</h4>
+                    <p>Entre 5-7 dias úteis após a personalização.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>É possível enviar como presente?</h4>
+                    <p>Sim! Oferecemos opção de presente com dedicatória especial.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Posso personalizar mais de um personagem?</h4>
+                    <p>Sim, personalize até 3 personagens na mesma história.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>O livro vem em formato físico ou digital?</h4>
+                    <p>Entregamos livro físico de alta qualidade.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Qual a política de troca/reembolso?</h4>
+                    <p>7 dias para trocas e devoluções conforme lei.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Livros Infantis Personalizados</h3>
+                    <p>Criando memórias afetivas através da leitura</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="#politica-privacidade">Política de Privacidade</a>
+                    <a href="#termos-uso">Termos de Uso</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Receba novidades e descontos exclusivos</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Livros Infantis Personalizados. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
