@@ -169,6 +169,79 @@
                 font-size: 1rem;
             }
         }
+        
+        /* Estilos para a seção de comentários */
+        .comments-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .comments-section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            color: #FF6B6B;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .comment-form textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e3f2fd;
+            border-radius: 10px;
+            font-family: 'Comic Neue', cursive;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            resize: vertical;
+        }
+        
+        .comment-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .comment-form button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        
+        .comments-list {
+            margin-top: 2rem;
+        }
+        
+        .comment {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .comment p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        
+        .comment strong {
+            color: #4CAF50;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #FF6B6B;
+        }
     </style>
 </head>
 <body>
@@ -189,7 +262,7 @@
 
     <div class="book-detail-container">
         <div class="book-image">
-            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=500&h=600&fit=crop" alt="O Cavaleiro e o Dragão Lendário">
+            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=600&fit=crop" alt="O Cavaleiro e o Dragão Lendário">
         </div>
         
         <div class="book-info">
@@ -215,5 +288,36 @@
             <button class="btn-primary">Montar meu livro</button>
         </div>
     </div>
+    
+    <!-- Seção de Comentários -->
+    <section class="comments-section">
+        <h2>O que os pais dizem</h2>
+        <form class="comment-form">
+            <textarea placeholder="Deixe seu comentário aqui..." required></textarea>
+            <button type="submit">Enviar Comentário</button>
+        </form>
+        <div class="comments-list">
+            <div class="comment">
+                <p>"Meu filho se sentiu realmente parte desta aventura épica! A personalização com o nome dele o deixou muito orgulhoso de ser o cavaleiro da história."</p>
+                <span class="testimonial-author">- Roberto, SP</span>
+            </div>
+            <div class="comment">
+                <p>"Uma história envolvente com ilustrações de alta qualidade. Meu filho já pediu para ler várias vezes e se imagina como o herói a cada leitura."</p>
+                <span class="testimonial-author">- Fernanda, RJ</span>
+            </div>
+            <div class="comment">
+                <p>"Presente perfeito para meu sobrinho. Ele ficou encantado com a aventura e as ilustrações detalhadas. A entrega foi rápida e o produto de excelente qualidade."</p>
+                <span class="testimonial-author">- Paulo, MG</span>
+            </div>
+            <div class="comment">
+                <p>"Minha filha adorou se ver como a companheira do cavaleiro nesta jornada épica. As ilustrações são magníficas e a narrativa prende a atenção do começo ao fim."</p>
+                <span class="testimonial-author">- Juliana, RS</span>
+            </div>
+            <div class="comment">
+                <p>"Qualidade impressionante e história cativante. Meu filho não para de falar sobre sua aventura com o dragão lendário!"</p>
+                <span class="testimonial-author">- Marcelo, PR</span>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
